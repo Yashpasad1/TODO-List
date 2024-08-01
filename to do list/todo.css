@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: alice ;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient( #d6ed05 50% , #00d4ff 50%);
+    
+
+}
+
+.app{
+    width:min(95vw,31em);
+    position: absolute;
+    transform: translate(-50% );
+    top: 5%;
+    left: 50%;
+    
+    /* background-color: white;
+    box-shadow: 7px 6px 12px 3px #7d98a1; ; */
+}
+
+.container{
+    background-color: white;
+    box-shadow: 7px 6px 12px 3px #7d98a1; ;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.wapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr  4fr;
+    gap: 1em; 
+}
+
+.wapper input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    border-bottom: 2px solid rgb(109, 104, 104);
+    padding: 5px;
+    font-size: large;
+    
+}
+
+.wapper input:focus{
+    outline: none;
+    border-color:#00d4ff ;
+}
+
+.add_btn{
+    background-color: rgb(9, 204, 253);
+    border: none;
+    color: white;
+    border: 2px solid rgb(9, 204, 253);
+    border-radius: 5px;
+    font-size: large;
+}
+ 
+.task>p{
+    padding: 5px;
+}
+
+#error{
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 3px;
+    border: 2px solide white;
+    border-radius: 5px;
+    display: none;
+}
+
+.complete{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.taskadd{
+ display: grid;
+ grid-template-columns: 1fr 8fr 2fr;
+ background-color: aliceblue;
+ gap: 10px;
+ margin: 10px;
+ padding: 10px;
+ box-shadow: 7px 6px 12px 3px #7d98a1;
+}
+
+.taskadd input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    
+}
+
+.taskadd input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.taskadd input[type="checkbox"]:checked{
+    background-color:  rgb(9, 204, 253);
+    border-color: rgb(9, 204, 253);
+}
+
+.taskadd input[type="checkbox"]:checked:before{
+    position: absolute;
+    content: "\f00c";
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.taskadd span{
+    word-break: break-all;
+}
+
+.taskadd button{
+    border: 1px solid  rgb(9, 204, 253);
+    background-color:  rgb(9, 204, 253);
+    height: 30px;
+    width: 40px
+}
